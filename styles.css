@@ -13,7 +13,7 @@ nav {
   display: flex;
   flex-direction: column;
   border-bottom: 3px solid rgb(45 53 67);
-  padding: 20px;
+  padding: 10px 0 10px 0;
 }
 
 .nav-photo {
@@ -22,8 +22,7 @@ nav {
 
 img {
   width: 100px;
-/*  height: 100px;
-*/  border-radius: 50%;
+  border-radius: 50%;
 }
 
 .name {
@@ -31,20 +30,58 @@ img {
   font-weight: 400;
 }
 
+.fa-angle-down {
+  padding-left: 0px;
+}
+
 .nav-title {
   color: rgb(103 116 132);
   font-size: 11px;
   font-weight: 700;
+  padding-right: 10px;
+  margin-left: 10px;
+
 }
 
 nav p {
   font-size: 13px;
   font-weight: 700;
   padding: 10px;
+}
+
+/*font icons*/
+i {
+  width: 15px;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.yellow-square {
+  color: rgb(249 213 73);
+}
+
+.blue-square {
+  color: rgb(83 174 248);
+}
+
+.red-square {
+  color: rgb(215 55 98);
+}
+
+.green-square {
+  color: rgb(74 167 139);
+}
+
+.name:hover {
+  color: #FFF;
 
 }
 
-
+.nav-link:hover {
+  color: #FFF;
+  background-color: rgb(49 57 72);
+  border-left: 3px solid rgb(71 163 243);
+}
 
 main {
   background-color: #EEF2F6;
