@@ -31,6 +31,7 @@ nav p {
   font-weight: 700;
   padding: 10px;
   border-left: 3px solid #374050;
+  letter-spacing: .5px;
 }
 
 .nav-link:hover {
@@ -68,6 +69,7 @@ nav i {
   width: 15px;
   padding-right: 10px;
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .yellow-square {
@@ -195,7 +197,7 @@ h1 {
   padding-bottom: 13px;
 }
 
-.fa-map-marker-alt {
+.location-article-icon {
   padding-right: 5px;
 }
 
@@ -231,34 +233,51 @@ h1 {
 
 .open {
   color: rgb(156, 163, 174);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   border: 2px solid rgb(187 193 201);;
   border-radius: 30px;
   padding: 10px 15px 10px 15px;
   margin-right: 10px;
+  letter-spacing: .5px;
 }
 
 .fa-bookmark, .fa-pen, .fa-trash-alt {
   color: rgb(156, 163, 174);
-  padding: 15px 15px 15px 15px;
-  /*vertical-align:middle;*/
-  /*text-align: center;*/
-  width: 5px;
-  height: 5px;
+  padding: 10px 10px 10px 10px;
+  width: 15px;
+  height: 15px;
   border: 2px solid rgb(187 193 201);
-  border-radius: 50px;
+  border-radius: 50%;
   margin: 7px;
-
-
+  text-align: center;
 }
+
 
 /*bottom navigation of article*/
 .article-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 200px 0 40px;
+  padding: 15px 230px 0px 40px;
+  color: rgb(156, 163, 174);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
 
+.article-nav p {
+  border-bottom: 3px solid #FFF;
+  padding-bottom: 25px;
+/*  margin: 0 2px 0 2px;*/
+}
+
+.article-nav p:hover {
+  color: rgb(78, 81, 93);
+  border-bottom: 3px solid rgb(71 163 243);
+}
+
+.article-icon:hover {
+  color: rgb(71 163 243);
 }
 
 section {
