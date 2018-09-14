@@ -4,10 +4,12 @@ body {
   grid-template-columns: 200px 1fr;
 }
 
+/*nav container*/
 nav {
   background-color: #374050;
 }
 
+/*each div in nav*/
 .nav {
   color: rgb(163 172 189);
   display: flex;
@@ -16,8 +18,31 @@ nav {
   padding: 10px 0 10px 0;
 }
 
+.nav-title {
+  color: rgb(103 116 132);
+  font-size: 11px;
+  font-weight: 700;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+nav p {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  border-left: 3px solid #374050;
+}
+
+.nav-link:hover {
+  color: #FFF;
+  background-color: rgb(49 57 72);
+  border-left: 3px solid rgb(71 163 243);
+}
+
+/*name nav div*/
 .nav-photo {
   align-items: center;
+  padding-top: 20px;
 }
 
 img {
@@ -30,27 +55,16 @@ img {
   font-weight: 400;
 }
 
+.name:hover {
+  color: #FFF;
+}
+
 .fa-angle-down {
   padding-left: 0px;
 }
 
-.nav-title {
-  color: rgb(103 116 132);
-  font-size: 11px;
-  font-weight: 700;
-  padding-right: 10px;
-  margin-left: 10px;
-
-}
-
-nav p {
-  font-size: 13px;
-  font-weight: 700;
-  padding: 10px;
-}
-
 /*font icons*/
-i {
+nav i {
   width: 15px;
   padding-right: 10px;
   margin-left: 10px;
@@ -72,19 +86,187 @@ i {
   color: rgb(74 167 139);
 }
 
-.name:hover {
-  color: #FFF;
-
-}
-
-.nav-link:hover {
-  color: #FFF;
-  background-color: rgb(49 57 72);
-  border-left: 3px solid rgb(71 163 243);
-}
-
+/*container for right side of the page*/
 main {
   background-color: #EEF2F6;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "article article"
+  "section aside";
+  grid-template-rows: .3fr .7fr 2fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+header {
+  display: flex;
+  /*align-items: center;*/
+  grid-area: header;
+  background-color: #FFF;
+}
+
+/*every div in header*/
+.header {
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(229 230 233);
+}
+
+.header:hover {
+  background-color: rgb(71 163 243);
+}
+
+.header-2 {
+  width: 80%;  
+}
+
+.header-2:hover {
+  background-color: #FFF;
+}
+
+.search-input {
+  border: none;
+  height: 90%;
+  width: 90%;
+  font-size: 14px;
+  padding-left: 5px;
+  outline-width: 0;
+}
+
+::placeholder {
+  color: rgb(187 193 201);
+  font-size: 14px;
+}
+
+/*header icons*/
+header i {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(156, 163, 174);
+  padding: 21px 30px 22px 30px;
+/*  width: 30px;*/
+}
+
+header i:hover {
+  color: #FFF;
+}
+
+.fa-caret-left {
+  color: rgb(71 163 243);
+  padding-right: 5px;
+  padding-left: 22px;
+}
+
+.fa-bars {
+  padding-left: 0px;
+}
+
+.fa-search {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.fa-search:hover {
+  color: rgb(156, 163, 174);
+}
+
+.header-1:hover .fa-caret-left, .header-1:hover .fa-bars {
+  color: #FFF;
+}
+
+/*section right below the header*/
+article {
+  grid-area: article;
+  background-color: #FFF;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/*left side of article*/
+
+h1 {
+  color: rgb(78, 81, 93);
+  font-size: 25px;
+  padding-bottom: 13px;
+}
+
+.fa-map-marker-alt {
+  padding-right: 5px;
+}
+
+.location {
+  color: rgb(156, 163, 174);
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.dot {
+  padding-left: 10px;
+}
+
+.preview {
+  color: rgb(71 163 243);
+  padding-left: 10px;
+}
+
+/*right side of article*/
+.article-icons {
+  display: flex;
+  align-items : center;
 }
 
 
+.fa-circle {
+  font-size: 11px;
+  padding-right: 5px;
+  color: rgb(147, 187, 81);
+ /* width: 5px;
+  height: 5px;*/
+}
+
+.open {
+  color: rgb(156, 163, 174);
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid rgb(187 193 201);;
+  border-radius: 30px;
+  padding: 10px 15px 10px 15px;
+  margin-right: 10px;
+}
+
+.fa-bookmark, .fa-pen, .fa-trash-alt {
+  color: rgb(156, 163, 174);
+  padding: 15px 15px 15px 15px;
+  /*vertical-align:middle;*/
+  /*text-align: center;*/
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgb(187 193 201);
+  border-radius: 50px;
+  margin: 7px;
+
+
+}
+
+/*bottom navigation of article*/
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px 0 40px;
+
+}
+
+section {
+  grid-area: section;
+  background-color: rgb(237 242 245);
+}
+
+aside{
+  grid-area: aside;
+  background-color: rgb(237 242 245);
+}
