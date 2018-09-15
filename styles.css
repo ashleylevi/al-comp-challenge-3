@@ -259,7 +259,7 @@ h1 {
 .article-nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 230px 0px 40px;
+  padding: 40px 300px 0px 40px;
   color: rgb(156, 163, 174);
   font-size: 13px;
   font-weight: 700;
@@ -477,7 +477,7 @@ hr {
   "properties properties";
   grid-template-columns: 1fr;
   grid-template-rows: 70px 1fr;
-  margin: 10px 0 0 50px;
+  margin: 10px 0 50px 50px;
 }
 
 .description-title {
@@ -522,7 +522,7 @@ hr {
 .job-container {
   grid-area: properties;
   background-color: #FFF;
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
 }
 
 #job-div {
@@ -560,9 +560,12 @@ hr {
 }
 
 /*right side of job posting*/
+
 .job-description {
   font-weight: 400;
   font-size: 15px;
+ /* padding-left: 40px;
+  margin-right: 40px;*/
   overflow-wrap: break-word;
 
 }
@@ -576,41 +579,47 @@ hr {
 
 #desc-title {
   width: 500px;
-  margin-right: 110px;
+  margin-right: 90px;
 }
 
 
 
 
-/*right side oF job description grid*/
+
+
+/*right side of job description grid*/
 aside {
   grid-area: aside;
   background-color: rgb(237 242 245);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0px;
+  padding-right: 50px;
   margin-top: 10px
+  padding-left: 10px;
 
 }
 
+/*social media buttons*/
 .aside-button {
-  width: 200px;
-  height: 35px;
+  width: 250px;
+  height: 50px;
   color: #FFF;
   border: none;
-  outline-width: 0;
+  /*outline-width: 0;*/
   font-weight: 700;
   border-radius: 2px;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 75px;
+  font-size: 13px;
 }
 
 .facebook {
   background-color: rgb(80 112 187);
-  padding-right: 60px;
+  /*padding-right: 50px;*/
 
 }
 
@@ -620,9 +629,75 @@ aside {
 
 .linkedin {
   background-color: rgb(54 129 184);
+  margin-bottom: 40px;
 }
 
 .fa-facebook-f, .fa-twitter, .fa-linkedin {
- padding-left: 20px;
+ padding-left: 10px;
+ font-size: 17px;
 }
+
+
+/*aside inputs*/
+.link-to-job {
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgb(229 230 233);
+}
+.link-to-this-job {
+  color: rgb(78, 81, 93);
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.fa-globe-americas, .fa-save, .fa-paper-plane {
+  padding-right: 8px;
+}
+
+.ipsum  {
+  color: rgb(156, 163, 174);
+  font-size: 13px;
+  padding-bottom: 25px;
+  width: 250px;
+
+}
+
+.aside-input {
+  border: none;
+  width: 185px;
+  height: 30px;
+  border-radius: 2px;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+
+.aside-input-button {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background-color: rgb(103 184 191);
+  color: #FFF;
+  border-radius: 2px;
+  padding: 5px;
+
+}
+
+::placeholder {
+  /*color: rgb(78, 81, 93);
+  font-size: 12px;*/
+  padding-left: 5px;
+}
+
+.button-widget, .upload-resume {
+  margin-top: 30px;
+}
+
+.upload-resume {
+  border-bottom: none;
+}
+
+.resume-input {
+  width: 230px;
+}
+
 
