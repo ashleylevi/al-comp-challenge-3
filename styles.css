@@ -64,6 +64,10 @@ nav p {
   padding-left: 0px;
 }
 
+#nav-categories {
+  border-bottom: none;
+}
+
 /*font icons*/
 nav i {
   width: 15px;
@@ -233,25 +237,27 @@ h1 {
 }
 
 .open {
-  color: rgb(156, 163, 174);
-  font-size: 13px;
+  color: rgb(78, 81, 93);
+  font-size: 11px;
   font-weight: 700;
   border: 2px solid rgb(187 193 201);;
   border-radius: 30px;
   padding: 10px 15px 10px 15px;
   margin-right: 10px;
   letter-spacing: .5px;
+  outline-width: 0;
 }
 
-.fa-bookmark, .fa-pen, .fa-trash-alt {
+.article-button {
   color: rgb(156, 163, 174);
   padding: 10px;
-  width: 15px;
-  height: 15px;
+  width: 40px;
+  height: 40px;
   border: 2px solid rgb(187 193 201);
   border-radius: 50%;
   margin: 7px;
   text-align: center;
+  font-size: 13px;
 }
 
 
@@ -477,7 +483,7 @@ hr {
   "properties properties";
   grid-template-columns: 1fr;
   grid-template-rows: 70px 1fr;
-  margin: 10px 0 50px 50px;
+  margin: 0 0 50px 50px;
 }
 
 .description-title {
@@ -500,7 +506,7 @@ hr {
 .description-pen {
   color: rgb(228 232 237);
   border: none;
-  padding: 0;
+  padding: 5px 0 5px 0;
   margin: 0;
   width: 15px;
   height: 15px;
@@ -560,10 +566,10 @@ hr {
 }
 
 /*right side of job posting*/
-
 .job-description {
   font-weight: 400;
   font-size: 15px;
+  color: rgb(102 112 128);
  /* padding-left: 40px;
   margin-right: 40px;*/
   overflow-wrap: break-word;
@@ -575,6 +581,10 @@ hr {
   height: 30px;
   border-radius: 50px;
   padding-right: 10px;
+}
+
+#hiring-lead {
+  padding-top: 8px;
 }
 
 #desc-title {
@@ -669,6 +679,8 @@ aside {
   border-radius: 2px;
   padding: 5px;
   text-overflow: ellipsis;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .aside-input-button {
@@ -682,10 +694,10 @@ aside {
 
 }
 
-::placeholder {
-  /*color: rgb(78, 81, 93);
-  font-size: 12px;*/
-  padding-left: 5px;
+.resume-input::placeholder, .aside-input::placeholder {
+  color: rgb(78, 81, 93);
+  font-size: 13px;
+  padding-left: 2px;
 }
 
 .button-widget, .upload-resume {
@@ -697,7 +709,12 @@ aside {
 }
 
 .resume-input {
+  font-size: 14px;
+  padding-left: 10px;
   width: 230px;
 }
 
+.pointer {
+  cursor: pointer;
+}
 
