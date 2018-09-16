@@ -11,10 +11,10 @@ nav {
 
 /*each div in nav*/
 .nav {
+  border-bottom: 3px solid rgb(45 53 67);
   color: rgb(163 172 189);
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid rgb(45 53 67);
   padding: 10px 0 10px 0;
 }
 
@@ -22,22 +22,22 @@ nav {
   color: rgb(103 116 132);
   font-size: 11px;
   font-weight: 700;
-  padding-right: 10px;
   margin-left: 10px;
+  padding-right: 10px;
 }
 
 nav p {
+  border-left: 3px solid #374050;
   font-size: 13px;
   font-weight: 700;
-  padding: 10px;
-  border-left: 3px solid #374050;
   letter-spacing: .5px;
+  padding: 10px;
 }
 
 .nav-link:hover {
-  color: #FFF;
   background-color: rgb(49 57 72);
   border-left: 3px solid rgb(71 163 243);
+  color: #FFF;
 }
 
 /*name nav div*/
@@ -47,13 +47,13 @@ nav p {
 }
 
 .profile-pic {
-  width: 100px;
   border-radius: 50%;
+  width: 100px;
 }
 
 .name {
-  padding-top: 12px;
   font-weight: 400;
+  padding-top: 12px;
 }
 
 .name:hover {
@@ -70,10 +70,10 @@ nav p {
 
 /*font icons*/
 nav i {
-  width: 15px;
-  padding-right: 10px;
-  margin-left: 10px;
   font-size: 14px;
+  margin-left: 10px;
+  padding-right: 10px;
+  width: 15px;
 }
 
 .yellow-square {
@@ -95,29 +95,28 @@ nav i {
 /*container for right side of the page*/
 main {
   background-color: #EEF2F6;
-  width: 100%;
   display: grid;
   grid-template-areas:
   "header header"
   "article article"
   "section section"
   "main aside";
-  grid-template-rows: .1fr .5fr 1fr 2fr;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: .1fr .5fr 1fr 2fr;
+  width: 100%;
 }
 
 header {
-  display: flex;
-  /*align-items: center;*/
-  grid-area: header;
   background-color: #FFF;
+  display: flex;
+  grid-area: header;
 }
 
 /*every div in header*/
 .header {
   align-items: center;
-  display: flex;
   border: 1px solid rgb(229 230 233);
+  display: flex;
 }
 
 .header:hover {
@@ -134,11 +133,11 @@ header {
 
 .search-input {
   border: none;
-  height: 90%;
-  width: 90%;
   font-size: 14px;
-  padding-left: 5px;
+  height: 90%;
   outline-width: 0;
+  padding-left: 5px;
+  width: 90%;
 }
 
 ::placeholder {
@@ -148,11 +147,10 @@ header {
 
 /*header icons*/
 header i {
+  color: rgb(156, 163, 174);
   font-size: 25px;
   font-weight: 400;
-  color: rgb(156, 163, 174);
   padding: 21px 30px 22px 30px;
-/*  width: 30px;*/
 }
 
 header i:hover {
@@ -184,8 +182,8 @@ header i:hover {
 
 /*section right below the header*/
 article {
-  grid-area: article;
   background-color: #FFF;
+  grid-area: article;
 }
 
 .article-container {
@@ -223,53 +221,51 @@ h1 {
 
 /*right side of article*/
 .article-icons {
-  display: flex;
   align-items : center;
+  display: flex;
 }
 
 
 .fa-circle {
+  color: rgb(147, 187, 81);
   font-size: 11px;
   padding-right: 5px;
-  color: rgb(147, 187, 81);
- /* width: 5px;
-  height: 5px;*/
 }
 
 .open {
+  border: 2px solid rgb(187 193 201);;
+  border-radius: 30px;
   color: rgb(78, 81, 93);
   font-size: 11px;
   font-weight: 700;
-  border: 2px solid rgb(187 193 201);;
-  border-radius: 30px;
-  padding: 10px 15px 10px 15px;
-  margin-right: 10px;
   letter-spacing: .5px;
+  margin-right: 10px;
   outline-width: 0;
+  padding: 10px 15px 10px 15px;
 }
 
 .article-button {
-  color: rgb(156, 163, 174);
-  padding: 10px;
-  width: 40px;
-  height: 40px;
   border: 2px solid rgb(187 193 201);
   border-radius: 50%;
-  margin: 7px;
-  text-align: center;
+  color: rgb(156, 163, 174);
   font-size: 13px;
+  height: 40px;
+  margin: 7px;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
 }
 
 
 /*bottom navigation of article*/
 .article-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 300px 0px 40px;
   color: rgb(156, 163, 174);
+  display: flex;
   font-size: 13px;
   font-weight: 700;
+  justify-content: space-between;
   letter-spacing: .5px;
+  padding: 40px 300px 0px 40px;
 }
 
 .article-nav p {
@@ -279,8 +275,8 @@ h1 {
 }
 
 .article-nav p:hover {
-  color: rgb(78, 81, 93);
   border-bottom: 3px solid rgb(71 163 243);
+  color: rgb(78, 81, 93);
 }
 
 .article-icon:hover {
@@ -289,25 +285,23 @@ h1 {
 
 /*main charts and graphs section*/
 section {
-  grid-area: section;
   background-color: rgb(237 242 245);
+  grid-area: section;
   padding: 10px 10px 0 10px;
 }
 
 .charts {
   display: flex;
-  /*justify-content: space-between;*/
   padding: 30px 0px 30px 50px;
 }
 
 
 /*circles chart container*/
-
 .circles-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin-right: 60px;
-  align-items: center;
 }
 
 /*circle pictures and animation*/
@@ -320,55 +314,54 @@ section {
 .circles-chart {
   height: 175px;
   transform: rotate(-180deg);
-  /*max-width: 175px;*/
 }
 
 .circle1 {
-  stroke: #65b8bf;
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
   animation: progress 1.5s ease-out forwards;
+  fill: none;
+  stroke: #65b8bf;
+  stroke-linecap: round;
+  stroke-width: 2.6;
 }
 
 .circle1-grey {
-  stroke: #dae3ea;
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
   animation: progress .75s ease-out forwards;
+  fill: none;
+  stroke: #dae3ea;
+  stroke-linecap: round;
+  stroke-width: 2.6;
 }
 
 .circle2 {
-  stroke: #45a3f3;
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
   animation: progress 1.5s ease-out forwards;
+  fill: none;
+  stroke: #45a3f3;
+  stroke-linecap: round;
+  stroke-width: 2.6;
 }
 
 .circle2-grey {
-  stroke: #dae3ea;
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
   animation: progress .75s ease-out forwards;
+  fill: none;
+  stroke: #dae3ea;
+  stroke-linecap: round;
+  stroke-width: 2.6;
 }
 
 .circle3 {
-  stroke: #a56dab;
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
   animation: progress 1.5s ease-out forwards;
+  fill: none;
+  stroke: #a56dab;
+  stroke-linecap: round;
+  stroke-width: 2.6;
 }
 
 .circle3-grey {
-  stroke: #dae3ea;
+  animation: progress .75s ease-out forwards;
   fill: none;
+  stroke: #dae3ea;
   stroke-linecap: round;
   stroke-width: 2.6;
-  animation: progress .75s ease-out forwards;
 }
 
 .circle-text, .circle-percentage {
@@ -377,8 +370,8 @@ section {
 
 .circle-text {
   fill: #5b6677;
-  font-weight: 500;
   font-size: .45rem;
+  font-weight: 500;
 }
 
 .circle-percentage {
@@ -425,9 +418,9 @@ section {
 
 /*graph section*/
 .graph-chart-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 0;
 }
 
@@ -436,15 +429,15 @@ section {
 }
 
 .totals-button, .applications-button {
+  border: 2px solid rgb(187 193 201);;
+  border-radius: 30px;
   color: rgb(78, 81, 93);
   font-size: 11px;
   font-weight: 700;
-  border: 2px solid rgb(187 193 201);;
-  border-radius: 30px;
-  padding: 8px 13px 8px 13px;
-  margin-right: 10px;
   letter-spacing: .5px;
+  margin-right: 10px;
   outline-width: 0;
+  padding: 8px 13px 8px 13px;
 }
 
 .applications-button {
@@ -452,11 +445,10 @@ section {
 }
 
 /* charts dividerline */
-
 hr {
   border: 1px solid rgb(229 230 233);
-  width: 40%;
   display: inline-block;
+  width: 40%;
 }
 
 .left {
@@ -469,9 +461,8 @@ hr {
 
 .arrow-button {
   border-radius: 50px;
-  padding: 0.5rem 0.7rem;
   outline-width: 0;
-
+  padding: 0.5rem 0.7rem;
 }
 
 /*container for entire job posting*/
@@ -487,62 +478,62 @@ hr {
 }
 
 .description-title {
-  grid-area: title;
-  display: flex;
   align-items: center;
-  padding: 30px;
   background-color: #374050;
+  display: flex;
+  grid-area: title;
+  padding: 30px;
 }
 
 .description-title h1 {
    color: rgb(228 232 237);
    font-size: 13px;
-   letter-spacing: .5px;
    font-weight: 700;
+   letter-spacing: .5px;
    margin-right: 15px;
    padding-top: 12px;
 }
 
 .description-pen {
-  color: rgb(228 232 237);
   border: none;
-  padding: 5px 0 5px 0;
-  margin: 0;
-  width: 15px;
+  color: rgb(228 232 237);
   height: 15px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  width: 15px;
 }
 
 .description-button {
   background-color: rgb(126 139 165);
-  color: rgb(228 232 237);
   border: none;
   border-radius: 2px;
-  padding: 5px 15px 5px 15px;
-  text-align: center;
+  color: rgb(228 232 237);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: .5px;
+  padding: 5px 15px 5px 15px;
+  text-align: center;
 }
 
 /*container for the titles & description*/
 .job-container {
-  grid-area: properties;
   background-color: #FFF;
+  grid-area: properties;
   padding: 30px 30px 10px 30px;
 }
 
 #job-div {
   display: flex;
-  padding-top: 0;
   padding-bottom: 20px;
+  padding-top: 0;
 }
 
 /*container div for each job property and value*/
 .job-div {
   display: flex;
-  padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 80px;
+  padding-top: 20px;
 
 }
 
@@ -550,9 +541,8 @@ hr {
 .title {
   color: rgb(78, 81, 93);
   font-size: 13px;
-  letter-spacing: .5px;
   font-weight: 700;
-  /*padding: 20px 50px 20px 0;*/
+  letter-spacing: .5px;
   overflow-wrap: break-word;
   width: 200px;
   
@@ -560,27 +550,24 @@ hr {
 
 .job-hr {
   border: 1px solid rgb(229 230 233);
-  width: 90%;
   display: inline-block;
-  /*margin-bottom:10px;*/
+  width: 90%;
 }
 
 /*right side of job posting*/
 .job-description {
-  font-weight: 400;
-  font-size: 15px;
   color: rgb(102 112 128);
- /* padding-left: 40px;
-  margin-right: 40px;*/
+  font-size: 15px;
+  font-weight: 400;
   overflow-wrap: break-word;
 
 }
 
 .lead{
-  width: 30px;
-  height: 30px;
   border-radius: 50px;
+  height: 30px;
   padding-right: 10px;
+  width: 30px;
 }
 
 #hiring-lead {
@@ -592,45 +579,37 @@ hr {
   margin-right: 90px;
 }
 
-
-
-
-
-
 /*right side of job description grid*/
 aside {
-  grid-area: aside;
+  align-items: center;
   background-color: rgb(237 242 245);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-right: 50px;
+  grid-area: aside;
   margin-top: 10px
   padding-left: 10px;
+  padding-right: 50px;
 
 }
 
 /*social media buttons*/
 .aside-button {
-  width: 250px;
-  height: 50px;
-  color: #FFF;
   border: none;
-  /*outline-width: 0;*/
-  font-weight: 700;
   border-radius: 2px;
-  margin-bottom: 15px;
+  color: #FFF;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-right: 75px;
   font-size: 13px;
+  font-weight: 700;
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-right: 75px;
+  width: 250px;
 }
 
 .facebook {
   background-color: rgb(80 112 187);
-  /*padding-right: 50px;*/
-
 }
 
 .twitter {
@@ -643,15 +622,14 @@ aside {
 }
 
 .fa-facebook-f, .fa-twitter, .fa-linkedin {
- padding-left: 10px;
  font-size: 17px;
+ padding-left: 10px;
 }
-
 
 /*aside inputs*/
 .link-to-job {
-  padding-bottom: 30px;
   border-bottom: 2px solid rgb(229 230 233);
+  padding-bottom: 30px;
 }
 .link-to-this-job {
   color: rgb(78, 81, 93);
@@ -674,30 +652,30 @@ aside {
 
 .aside-input {
   border: none;
-  width: 185px;
-  height: 30px;
   border-radius: 2px;
-  padding: 5px;
-  text-overflow: ellipsis;
   font-size: 14px;
+  height: 30px;
+  padding: 5px;
   padding-left: 10px;
+  text-overflow: ellipsis;
+  width: 185px;
 }
 
 .aside-input-button {
-  height: 40px;
-  width: 50px;
-  border: none;
   background-color: rgb(103 184 191);
-  color: #FFF;
+  border: none;
   border-radius: 2px;
+  color: #FFF;
+  height: 40px;
   padding: 5px;
-
+  width: 50px;
 }
 
 .resume-input::placeholder, .aside-input::placeholder {
   color: rgb(78, 81, 93);
   font-size: 13px;
   padding-left: 2px;
+  text-overflow: ellipsis;
 }
 
 .button-widget, .upload-resume {
