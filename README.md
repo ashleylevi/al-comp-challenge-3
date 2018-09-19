@@ -20,6 +20,4 @@
 
 ### My Version
 
-All photos are from Unsplash.com
-
 ![alt text](https://farm2.staticflickr.com/1859/30902019358_35e441c56d_b.jpg)
