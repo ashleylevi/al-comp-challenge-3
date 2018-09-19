@@ -219,6 +219,11 @@ h1 {
   padding-left: 10px;
 }
 
+.preview:hover {
+  filter: brightness(120%);
+  font-weight: 700;
+}
+
 /*right side of article*/
 .article-icons {
   align-items : center;
@@ -453,6 +458,10 @@ section {
   margin-top: 10px;
 }
 
+.totals-button:hover, .applications-button:hover {
+  color: rgb(71 163 243);
+}
+
 /* charts divide line */
 .page-break {
   display: flex;
@@ -520,6 +529,10 @@ section {
   letter-spacing: .5px;
   padding: 5px 15px 5px 15px;
   text-align: center;
+}
+
+.description-button:hover {
+  filter: brightness(120%);
 }
 
 /*container for the titles & description*/
@@ -618,6 +631,10 @@ aside {
   background-color: rgb(80 112 187);
 }
 
+.facebook:hover, .twitter:hover, .linkedin:hover {
+  filter: brightness(120%);
+}
+
 .twitter {
   background-color: rgb(71 168 233);
 }
@@ -676,6 +693,10 @@ aside {
   height: 40px;
   padding: 5px;
   width: 50px;
+}
+
+.aside-input-button:hover {
+  filter: brightness(120%);
 }
 
 .resume-input::placeholder, .aside-input::placeholder {
