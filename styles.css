@@ -898,12 +898,6 @@ aside {
 
 @media screen and (max-width: 612px) {
 
-::placeholder {
-
-}
-
-@media screen and (max-width: 612px) {
-
   .article-container {
     flex-direction: column;
     text-align: center;
@@ -1016,13 +1010,7 @@ aside {
 
 }
 
-/*@media screen and (max-width: 400px) {
-  
-  .aside-input {
-    width: 130px;
-  }
 
-}*/
 
 
 
