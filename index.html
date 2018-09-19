@@ -64,7 +64,7 @@
         <p class="location"><i class="fas fa-map-marker-alt location-article-icon"></i>San Francisco, CA<span class="dot">&#8226</span><span class="preview pointer">Preview this post</span></p>
       </div>
       <div class="article article-icons">
-        <button class="open"><i class="fas fa-circle"></i>OPEN</button>
+        <button class="open"><i class="fas fa-circle"></i><p class="hide-open">OPEN</p></button>
         <button class="article-button pointer"><i class="fas fa-bookmark article-icon"></i></button>
         <button class="article-button pointer"><i class="fas fa-pen article-icon"></i></button>
         <button class="article-button pointer"><i class="fas fa-trash-alt article-icon"></i></button>
@@ -76,7 +76,7 @@
       <div class="article article-nav">
         <p class="pointer">SUMMARY</p>
         <p class="pointer">APPLICANTS</p>
-        <p class="pointer">JOB BOARD</p>
+        <p id="job-board" class="pointer">JOB BOARD</p>
         <p class="pointer">INTERVIEWS</p>
         <p class="pointer">ACTIVITY</p>
         <p class="pointer">BROADCAST</p>
@@ -133,7 +133,7 @@
                   a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <text x="-24" y="-17.5" class="circle-text">912</text>
-                <text x="-25.5" y="-12.5" class="circle-percentage">FORWARDS</text>
+                <text x="-26.55" y="-12.5" class="circle-title">FORWARDS</text>
               </svg>
             </div>
             <div class="circle-button">
@@ -149,10 +149,12 @@
             </div>
           </div>
         </div>
-        <div class="charts-div-line">
-          <hr class="left">
+        <div class="page-break">
+          <div class="left-break">
+          </div>
           <button class="arrow-button pointer"><i class="fas fa-angle-up"></i></button>
-          <hr class="right">
+          <div class="right-break">
+          </div>
         </div>
       </section>
     <main class="job-posting">
@@ -162,12 +164,12 @@
       </div>
       <div class="job-container">
         <div id="job-div">
-          <p class="title">POSITION TITLE</p> 
+          <p class="title move-right-1">POSITION TITLE</p> 
           <p class="job-description">Customer Service Representative</p>
         </div>
         <hr class="job-hr">
         <div class="job-div">
-          <p class="title">LOCATION</p> 
+          <p class="title move-right-2">LOCATION</p> 
           <p class="job-description">San Fransisco, CA</p>
         </div>
         <hr class="job-hr">
@@ -205,9 +207,9 @@
   <aside>
       <div class="social-container">
         <div class="social-buttons">
-        <button class="aside-button facebook pointer"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
-        <button class="aside-button twitter pointer"><i class="fab fa-twitter"></i>Tweet this Job</button>
-        <button class="aside-button linkedin pointer"><i class="fab fa-linkedin"></i>Post to Linkedin</button>
+        <button class="aside-button facebook pointer"><i class="fab fa-facebook-f"></i><p class="hide-this">Post to Facebook</p></button>
+        <button class="aside-button twitter pointer"><i class="fab fa-twitter"></i><p class="hide-this">Tweet this Job</p></button>
+        <button class="aside-button linkedin pointer"><i class="fab fa-linkedin"></i><p class="hide-this">Post to Linkedin</p></button>
         </div>
         <div class="link-to-job">
         <p class="link-to-this-job"><i class="fas fa-globe-americas"></i>Link to this job</p>
