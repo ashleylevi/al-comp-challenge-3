@@ -878,6 +878,17 @@ aside {
 
 }
 
+@media screen and (max-width: 836px) {
+
+  header i {
+    color: rgb(156, 163, 174);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 12px 20px 12px 20px;
+  }
+
+}
+
 
 @media screen and (max-width: 822px) {
 
